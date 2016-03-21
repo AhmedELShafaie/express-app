@@ -1,4 +1,4 @@
 #!/bin/sh
-cd /app
+cd /home/ec2-user/app
 npm install
 forever start index.js
