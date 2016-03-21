@@ -11,7 +11,7 @@ permissions:
     group: ec2-user
     mode: 777
     type:
-      - file
+      - directory
 
 hooks:
   AfterInstall:
