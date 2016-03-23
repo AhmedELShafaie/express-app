@@ -6,7 +6,6 @@ files:
 
 permissions:
   - object: /
-    pattern: "**"
     owner: ec2-user
     group: ec2-user
     type:
@@ -18,4 +17,7 @@ hooks:
       runas: ec2-user
   ApplicationStart:
     - location: scripts/run.sh
+      runas: ec2-user
+  ValidateService:
+    - location: scripts/check_deployment.sh
       runas: ec2-user

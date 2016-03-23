@@ -1,7 +1,9 @@
 #!/bin/sh
+
+set -e
+
 source /home/ec2-user/.bash_profile
-u=$(whoami)
-echo "done. I am $u" >> /home/ec2-user/HEYYOU
+
 cd /home/ec2-user/app
-npm install
-forever start index.js
+/usr/local/bin/npm install > /home/ec2-user/npm_install.log
+/usr/local/bin/forever start index.js
