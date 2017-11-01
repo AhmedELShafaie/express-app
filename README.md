@@ -1,3 +1,3 @@
-# DEPRECATED
+# Sample express application on AWS
 
-This is a test repository I wrote for myself several years ago. I recommend against using it.
+This repository is a sample Express application along with scripts and ressources to deploy it to AWS using CodeDeploy. It's a bit dated and not supported.
